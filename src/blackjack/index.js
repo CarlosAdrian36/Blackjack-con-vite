@@ -10,7 +10,7 @@ import { crearDeck , miNombre as nom} from './usecase/crear-deck';
  */
 
  let deck         = [];
- const tipos      = ['C','D','H','S'];
+ const tipos      = ['C','D','H','S']; 
  const especiales = ['A','J','Q','K'];
  
  let puntosJugador = 0,
@@ -29,7 +29,7 @@ import { crearDeck , miNombre as nom} from './usecase/crear-deck';
  // Esta función crea un nuevo deck
 
  
- deck = crearDeck(tipos,especiales);
+ deck = crearDeck(tipos, especiales);
  
  
  // Esta función me permite tomar una carta
