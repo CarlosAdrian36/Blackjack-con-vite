@@ -5,14 +5,18 @@ export const miNombre = 'Carlos'
 
 /**
  * Esta funcion crea un nuevo deck
- * @param {Array<string>} tiposDeCarta  Ejemplo: 'C','D','H','S'
- * @param {Array<string>} tiposEspeciales Ejempol: 'A','J','Q','K'
+ * @param {Array<string>} tiposDeCarta  Ejemplo: ['C','D','H','S']
+ * @param {Array<string>} tiposEspeciales Ejempol: ['A','J','Q','K']
  * @returns {Array<String>} retorna un nuevo deck de cartas
  */
 
 export const crearDeck = (tiposDeCarta,tiposEspeciales) => {
 
-    if ( !tiposDeCarta || tiposDeCarta.length > 0)throw new Error ('Tipos de carta es obligatorio como un arreglo de string');
+    if ( !tiposDeCarta || tiposDeCarta.length === 0)
+        throw new Error ('Tipos de carta es obligatorio como un arreglo de string');
+    
+    if ( !tiposEspeciales || tiposEspeciales === 0)
+        throw new Error ('Tipos de carta es obligatorio como un arreglo de string');
 
 
     let deck = [];
